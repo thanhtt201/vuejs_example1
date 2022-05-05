@@ -2,17 +2,15 @@
   <div>
     <li>
       <input type="checkbox" v-model="todo.completed" />
-      <span :class="{ 'todo-completed': todo.completed }">{{
-        todo.title
-      }}</span>
+      <span :class="{ 'todo-completed': todo.completed }">{{ todo.title }}</span>
     </li>
   </div>
 </template>
 
 <script>
 export default {
-  name: "todo-item",
-  props: ["todo"],
+  name: 'todo-item',
+  props: ['todo'],
 };
 </script>
 

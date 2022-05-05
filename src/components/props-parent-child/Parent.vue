@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import Child1 from "./Child1.vue";
-import Child2 from "./Child2.vue";
+import Child1 from './Child1.vue';
+import Child2 from './Child2.vue';
 
 export default {
   components: {
@@ -20,12 +20,12 @@ export default {
   },
   data() {
     return {
-      name: "Trần Tiến Thành",
+      name: 'Trần Tiến Thành',
     };
   },
   methods: {
     handleChangeText() {
-      this.name = "Change text Parent";
+      this.name = 'Change text Parent';
     },
     changeTextChild1(event) {
       this.name = event;

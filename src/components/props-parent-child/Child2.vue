@@ -13,8 +13,8 @@ export default {
   },
   methods: {
     changeTextChild2() {
-      this.name = "Change Text Child 2";
-      this.$emit("change-text-child2", this.name);
+      this.name = 'Change Text Child 2';
+      this.$emit('change-text-child2', this.name);
     },
   },
 };
