@@ -45,6 +45,7 @@
       </select>
       {{ level }}
     </form>
+    <custom v-model="dataSwitch" />
   </div>
 </template>
 
@@ -55,6 +56,7 @@ import SlotForComponent from './components/SlotForComponent.vue';
 import HomeCard from './components/card/HomeCard.vue';
 import AboutCard from './components/card/AboutCard.vue';
 import ContactCard from './components/card/ContactCard.vue';
+import Custom from './components/Custom.vue';
 
 export default {
   name: 'App',
@@ -65,6 +67,7 @@ export default {
     homeCard: HomeCard,
     aboutCard: AboutCard,
     contactCard: ContactCard,
+    Custom,
   },
   data() {
     return {
@@ -74,6 +77,7 @@ export default {
       option: [],
       gender: 'Male',
       level: ['High', 'Medium', 'Low'],
+      dataSwitch: true,
     };
   },
   methods: {
